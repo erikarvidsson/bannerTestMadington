@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* 
+980*400:
+file:///Users/e/Documents/projects/arbetsprov/madington/banner/index.html?width=980&height=400&offsetTop=-250&headerSize=52&subHeaderSize=38
+320:250:
+file:///Users/e/Documents/projects/arbetsprov/madington/banner/index.html?width=320&height=250&offsetTop=0&headerSize=28&subHeaderSize=12
+300x600:
+file:///Users/e/Documents/projects/arbetsprov/madington/banner/index.html?width=300&height=600&offsetTop=0&offsetLeft=-280&headerSize=32&subHeaderSize=22
+*/
+
+:root {
+  --width: 320px;
+  --height: 250px;
+  --offsetTop: 0px;
+  --offsetLeft: 0px;
+  --headerSize: 40px;
+  --subHeaderSize: 20px;
+}
+
+h1 {
+  pointer-events: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none;
+}
+h2 {
+  pointer-events: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+h3 {
+  pointer-events: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+#page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.header {
+  z-index: 999;
+  position: relative;
+  color: #0156a9;
+  /* color: #FEDE00; */
+  text-shadow: 0px 0px 10px #fff;
+  font-size: var(--headerSize);
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  width: 100%;
+  top: 10%;
+}
+
+.subHeader {
+  z-index: 999;
+  position: relative;
+  color: #fff;
+  /* color: #FEDE00; */
+  text-shadow: 0px 0px 10px #000;
+  font-size: var(--subHeaderSize);
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  width: 100%;
+  top: 33%;
+}
+
+.logo {
+  height: 60px;
+  position: absolute;
+  z-index: 999;
+  bottom: 10px;
+  left: 20px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.before,
+.after {
+  width: 100%;
+  position: absolute;
+  top: var(--offsetTop);
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.content-image {
+  width: var(--width);
+  left: var(--offsetLeft);
+  /* height: var(--height); */
+  position: relative;
+}
+
+/* .after{
+  width:125px;
+} */
+
+.scroller {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 0.9;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.scroller:hover {
+  opacity: 1;
+}
+
+.scrolling {
+  pointer-events: none;
+  opacity: 1;
+  z-index: 1;
+}
+
+.scroller__thumb {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.scroller:before,
+.scroller:after {
+  content: " ";
+  display: block;
+  width: 7px;
+  height: 9999px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.5px;
+  z-index: 30;
+  transition: 0.1s;
+}
+.scroller:before {
+  top: 100%;
+}
+.scroller:after {
+  bottom: 100%;
+}
+
+.scroller {
+  border: 5px solid #fff;
+}
+.scroller:before,
+.scroller:after {
+  background: #fff;
+}
