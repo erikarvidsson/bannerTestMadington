@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-/* 
-980*400:
-file:///Users/e/Documents/projects/arbetsprov/madington/banner/index.html?width=980&height=400&offsetTop=-250&headerSize=52&subHeaderSize=38
-320:250:
-file:///Users/e/Documents/projects/arbetsprov/madington/banner/index.html?width=320&height=250&offsetTop=0&headerSize=28&subHeaderSize=12
-300x600:
-file:///Users/e/Documents/projects/arbetsprov/madington/banner/index.html?width=300&height=600&offsetTop=0&offsetLeft=-280&headerSize=32&subHeaderSize=22
-*/
-
 :root {
   --width: 320px;
   --height: 250px;
@@ -132,13 +123,8 @@ h3 {
 .content-image {
   width: var(--width);
   left: var(--offsetLeft);
-  /* height: var(--height); */
   position: relative;
 }
-
-/* .after{
-  width:125px;
-} */
 
 .scroller {
   width: 50px;
