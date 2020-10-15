@@ -14,8 +14,8 @@ file:///Users/e/Documents/projects/arbetsprov/madington/banner/index.html?width=
   --height: 250px;
   --offsetTop: 0px;
   --offsetLeft: 0px;
-  --headerSize: 40px;
-  --subHeaderSize: 20px;
+  --headerSize: 28px;
+  --subHeaderSize: 12px;
 }
 
 h1 {
@@ -24,6 +24,7 @@ h1 {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none;
+  font-family: "Noto Sans", sans-serif;
 }
 h2 {
   pointer-events: none;
@@ -31,6 +32,7 @@ h2 {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
+  font-family: "Noto Sans", sans-serif;
 }
 h3 {
   pointer-events: none;
@@ -38,6 +40,7 @@ h3 {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
+  font-family: "Noto Sans", sans-serif;
 }
 
 #page {
@@ -53,7 +56,6 @@ h3 {
   /* color: #FEDE00; */
   text-shadow: 0px 0px 10px #fff;
   font-size: var(--headerSize);
-  font-family: "Noto Sans", sans-serif;
   text-align: center;
   width: 100%;
   top: 10%;
@@ -64,9 +66,8 @@ h3 {
   position: relative;
   color: #fff;
   /* color: #FEDE00; */
-  text-shadow: 0px 0px 10px #000;
+  text-shadow: 0px 0px 10px #000000;
   font-size: var(--subHeaderSize);
-  font-family: "Noto Sans", sans-serif;
   text-align: center;
   width: 100%;
   top: 33%;
@@ -78,6 +79,28 @@ h3 {
   z-index: 999;
   bottom: 10px;
   left: 20px;
+}
+
+.button {
+  height: 42px;
+  position: absolute;
+  z-index: 999;
+  bottom: 20px;
+  right: 19px;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  margin: auto;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(254, 222, 0, 0.5);
+}
+
+.buttonText {
+    margin: 12px 18px;
+    font-size: 10px;
+    color: #fff;
 }
 
 * {
