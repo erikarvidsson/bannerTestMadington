@@ -1,6 +1,7 @@
 # bannerTestMadington
 
 Test tree diffrent sizes by changeing http://YOURURL to your local url.
+
 Size: 980*400:
 http://YOURURL?width=980&height=400&offsetTop=-250&headerSize=52&subHeaderSize=38
 
